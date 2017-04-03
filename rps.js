@@ -3,30 +3,35 @@ function RockPaperScissors(userChoice){
     let computer = 1 + Math.floor((Math.random()*3));
     let result;
     switch(userChoice) {
-        case 1: 
+        case 1:
             if (computer === 2) {
                 result = 'lost';
             } else if (computer === 3) {
                 result = 'win';
+            } else {
+              result = 'tie';
             }
             break;
-        case 2: 
+        case 2:
             if (computer === 3) {
                 result = 'lost';
             } else if (computer === 1) {
                 result = 'win';
+            } else {
+              result = 'tie';
             }
             break;
-        case 3: 
+        case 3:
             if (computer === 1) {
                 result = 'lost';
             } else if (computer === 2) {
                 result = 'win';
+            } else {
+              result = 'tie';
             }
             break;
         default:
-            result = 'tie';
-            break;
+            console.log('Go back and pick a number between 1 and 3');
     }
     return `You picked ${userChoice} and computer chose ${computer}. You ${result}.`;
 }
