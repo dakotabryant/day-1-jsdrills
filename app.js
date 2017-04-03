@@ -15,9 +15,3 @@ try {
 catch(err){
   console.log(err);
 }
-
-
-// QUestions for Rich
-// 1. Talk about syntax on lines 17 and 18. Is this correct?
-// 2. How to have multiple conditionals for 1 argument
-// 3. DRY for yob. Be able to pull argument from whoAmI function and pass to yearOfBirth function
